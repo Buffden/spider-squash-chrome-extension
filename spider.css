@@ -1,0 +1,14 @@
+.spider {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    z-index: 9999;
+    /* Keep spiders on top of all other content */
+    transition: transform 0.5s ease;
+    /* Optional: spider movement animation */
+}
+
+/* Optional: Animation to make spiders crawl */
+.spider:hover {
+    transform: rotate(360deg);
+}

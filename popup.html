@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+    h2 {
+      margin-bottom: 10px;
+    }
+    .stats {
+      background-color: #fff;
+      padding: 15px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .stats div {
+      margin-bottom: 10px;
+    }
+  </style>
+  <title>Spider Stats Dashboard</title>
+</head>
+<body>
+  <h2>Spider Stats Dashboard</h2>
+  <div class="stats">
+    <div>Total Killed Spiders: <span id="killedSpiders">0</span></div>
+    <div>Total Missed Spiders: <span id="missedSpiders">0</span></div>
+    <div>Spider 1 Kills: <span id="spider1Kills">0</span></div>
+    <div>Spider 2 Kills: <span id="spider2Kills">0</span></div>
+  </div>
+</body>
+<script src="popup.js"></script>
+</html>
