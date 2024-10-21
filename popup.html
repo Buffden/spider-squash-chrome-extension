@@ -3,35 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      padding: 20px;
-      background-color: #f9f9f9;
-    }
-    h2 {
-      margin-bottom: 10px;
-    }
-    .stats {
-      background-color: #fff;
-      padding: 15px;
-      border-radius: 5px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-    .stats div {
-      margin-bottom: 10px;
-    }
-  </style>
-  <title>Spider Stats Dashboard</title>
+  <title>Spider Squash Control</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h2>Spider Stats Dashboard</h2>
-  <div class="stats">
-    <div>Total Killed Spiders: <span id="killedSpiders">0</span></div>
-    <div>Total Missed Spiders: <span id="missedSpiders">0</span></div>
-    <div>Spider 1 Kills: <span id="spider1Kills">0</span></div>
-    <div>Spider 2 Kills: <span id="spider2Kills">0</span></div>
+  <div class="popup-container">
+    <h1 class="popup-title">🕸️ Spider Squash Control 🕸️</h1>
+
+    <div class="score-section">
+      <h2>Stats:</h2>
+      <p>Spiders Squashed: <span id="kill-count">0</span></p>
+      <p>Spiders Missed: <span id="missed-count">0</span></p>
+      <p>Spider1 Killed: <span id="spider1-count">0</span></p>
+      <p>Spider2 Killed: <span id="spider2-count">0</span></p>
+    </div>
+
+    <label class="toggle-label">
+      <input type="checkbox" id="toggle-spiders">
+      Enable Spider Spawning
+    </label>
+
+    <button id="reset-button" class="btn">Reset Stats</button>
   </div>
+
+  <script src="popup.js"></script>
 </body>
-<script src="popup.js"></script>
 </html>
