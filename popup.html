@@ -1,31 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
   <title>Spider Squash Control</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet"
+        href="styles.css">
 </head>
+
 <body>
-  <div class="popup-container">
-    <h1 class="popup-title">🕸️ Spider Squash Control 🕸️</h1>
+  <div class="container">
+    <h1 class="title">SPIDER SQUASH</h1>
+    <div class="dashboard">
+      <!-- Shield Section -->
+      <div class="shield">
+        <img src="./assets/badges/level-1.png"
+             alt="Spider Shield">
+        <div class="level">
+          <h2>LEVEL 1</h2>
+          <p>SPIDER HATER</p>
+        </div>
+      </div>
 
-    <div class="score-section">
-      <h2>Stats:</h2>
-      <p>Spiders Squashed: <span id="kill-count">0</span></p>
-      <p>Spiders Missed: <span id="missed-count">0</span></p>
-      <p>Spider1 Killed: <span id="spider1-count">0</span></p>
-      <p>Spider2 Killed: <span id="spider2-count">0</span></p>
+      <!-- Stats Section -->
+      <div class="stats">
+        <div class="stat">
+          <div class="stat-icon">
+            <img src="./assets/badges/level-1.png"
+                 alt="stat icon image">
+          </div>
+          <div>
+            <span class="stat-title">SPIDER KILLED</span>
+            <div class="progress-bar">
+              <div class="progress"
+                   style="width: 75%;"></div>
+            </div>
+          </div>
+          <span class="stat-value">75/100</span>
+        </div>
+        <div class="stat">
+          <div class="stat-icon">
+            <img src="./assets/badges/level-1.png"
+                 alt="stat icon image">
+          </div>
+          <div>
+            <span class="stat-title">SPIDER MISSED</span>
+            <div class="progress-bar">
+              <div class="progress"
+                   style="width: 20%;"></div>
+            </div>
+          </div>
+          <span class="stat-value">557</span>
+        </div>
+        <div class="stat">
+          <div class="stat-icon">
+            <img src="./assets/badges/level-1.png"
+                 alt="stat icon image">
+          </div>
+          <div>
+            <span class="stat-title">SPIDER MASTERY</span>
+            <div class="progress-bar">
+              <div class="progress"
+                   style="width: 40%;"></div>
+            </div>
+          </div>
+          <span class="stat-value">4/10</span>
+        </div>
+        <div class="stat">
+          <div class="stat-icon">
+            <img src="./assets/badges/level-1.png"
+                 alt="stat icon image">
+          </div>
+          <div>
+            <span class="stat-title">KILL STREAK</span>
+            <div class="progress-bar">
+              <div class="progress"
+                   style="width: 20%;"></div>
+            </div>
+          </div>
+          <span class="stat-value">+7</span>
+        </div>
+      </div>
     </div>
-
-    <label class="toggle-label">
-      <input type="checkbox" id="toggle-spiders">
-      Enable Spider Spawning
-    </label>
-
-    <button id="reset-button" class="btn">Reset Stats</button>
   </div>
-
-  <script src="popup.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
